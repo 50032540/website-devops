@@ -14,10 +14,11 @@
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-decoration: none;
+            background-image: url("milkyway.jpg");
+            
         }
 
         .headerImg{
-            background-image: url("milkyway.jpg");
             background-repeat: no-repeat;
             height: 100%;
             background-position: center;
@@ -34,6 +35,17 @@
             text-decoration: none;
         }
 
+        mySlides, img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        mySlides{
+            text-align: center;
+        }
+
         a {
             text-decoration: none;
         }
@@ -46,7 +58,7 @@
             color: black;
             background-color: #ddd;
             text-align: center;
-            cursor: pointer;
+            
         }
 
     </style>
@@ -71,27 +83,44 @@
 
                 <div class="mySlides">
                     <div class="imageNumber">1 / 4</div>
-                    <img src="LeoCC.jpg" style="width: 100%" alt="Leo Constellation">
+                    <img src="LeoCC.jpg" style="width: 50%" alt="Leo Constellation">
                     <div class="text">Leo Constellation</div>
                 </div>
 
                 <div class="mySlides">
                     <div class="imageNumber">2 / 4</div>
-                    <img src="OrionCC.jpg" style="width: 100%" alt="Orion Constellation">
+                    <img src="OrionCC.jpg" style="width: 50%" alt="Orion Constellation">
                     <div class="text">Orion Constellation</div>
                 </div>
 
                 <div class="mySlides">
                     <div class="imageNumber">3 / 4</div>
-                    <img src="Scorpius_rising.jpeg" style="width: 100%" alt="Scorpius Constellation">
+                    <img src="Scorpius_rising.jpeg" style="width: 50%" alt="Scorpius Constellation">
                     <div class="text">Scorpius Constellation</div>
                 </div>
 
                 <div class="mySlides">
                     <div class="imageNumber">4 / 4</div>
-                    <img src="TaurusCC_0.jpg" style="width: 100%" alt="Scorpius Constellation">
+                    <img src="TaurusCC_0.jpg" style="width: 50%" alt="Scorpius Constellation">
                     <div class="text">Taurus Constellation</div>
                 </div>
+
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 3000); // Change image every 2 seconds
+                    }
+                    </script>
 
 
 

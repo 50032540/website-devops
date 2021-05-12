@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,52 +8,99 @@
     <title>Adam's Website</title>
 
     <style>
-        
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+        }
 
+        .headerImg{
+            background-image: url("milkyway.jpg");
+            background-repeat: no-repeat;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
 
+        .headerText{
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            color: gainsboro;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .headerText button {
+            border: none;
+            outline: 0;
+            display: block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+        }
 
     </style>
 </head>
 
 
 <body>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        <div style="background-image: url('milkyway.jpg');">
-            <h1>Star Constellations</h1>
-        </div>
+    <div id="rickRoll">
 
-        <div class="slideshow-container">
-
-            <div class="mySlides">
-                <div class="imageNumber">1 / 4</div>
-                <img src="LeoCC.jpg" style="width: 100%" alt="Leo Constellation">
-                <div class="text">Leo Constellation</div>
+        
+            <div class="headerImg">
+                <div class="headerText">
+                    <h1 style="font-size: 50px;">Star Constellations</h1>
+                    <p>That everyone should know</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <button>Click me to discover</button>
+                    </a>
+                </div>
             </div>
 
-            <div class="mySlides">
-                <div class="imageNumber">2 / 4</div>
-                <img src="OrionCC.jpg" style="width: 100%" alt="Orion Constellation">
-                <div class="text">Orion Constellation</div>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <div class="imageNumber">1 / 4</div>
+                    <img src="LeoCC.jpg" style="width: 100%" alt="Leo Constellation">
+                    <div class="text">Leo Constellation</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="imageNumber">2 / 4</div>
+                    <img src="OrionCC.jpg" style="width: 100%" alt="Orion Constellation">
+                    <div class="text">Orion Constellation</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="imageNumber">3 / 4</div>
+                    <img src="Scorpius_rising.jpeg" style="width: 100%" alt="Scorpius Constellation">
+                    <div class="text">Scorpius Constellation</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="imageNumber">4 / 4</div>
+                    <img src="TaurusCC_0.jpg" style="width: 100%" alt="Scorpius Constellation">
+                    <div class="text">Taurus Constellation</div>
+                </div>
+
+
+
+
             </div>
 
-            <div class="mySlides">
-                <div class="imageNumber">3 / 4</div>
-                <img src="Scorpius_rising.jpeg" style="width: 100%" alt="Scorpius Constellation">
-                <div class="text">Scorpius Constellation</div>
-            </div>
 
-            <div class="mySlides">
-                <div class="imageNumber">4 / 4</div>
-                <img src="TaurusCC_0.jpg" style="width: 100%" alt="Scorpius Constellation">
-                <div class="text">Taurus Constellation</div>
-            </div>
-
-            
-
-
-        </div>
-
-
-    </a>
+        
+    </div>
 </body>
+
 </html>
